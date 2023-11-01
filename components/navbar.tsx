@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/images/vivid-logo.png";
 import getCategories from "@/actions/get-categories";
+
 export const revalidate = 0;
 
 const Navbar = async () => {

@@ -10,7 +10,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         className={cn(
-          `w-auto px-5 py-3 disabled:cursor-not-allowed hover:opacity-75 transition 
+          `w-auto px-5 py-3 disabled:cursor-not-allowed hover:bg-black transition  ease-in-out  hover:text-white
          
           `,
           className

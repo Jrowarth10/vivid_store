@@ -25,9 +25,7 @@ const NavbarActions = () => {
         className="flex items-center px-4 py-2 rounded-full border border-black"
       >
         <ShoppingBag size={20} />
-        <span className=" text-sm font-medium text-black">
-          {cart.items.length}
-        </span>
+        <span className=" text-sm font-medium">{cart.items.length}</span>
       </Button>
     </div>
   );

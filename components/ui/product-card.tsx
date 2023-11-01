@@ -8,11 +8,13 @@ import { useRouter } from "next/navigation";
 import { MouseEventHandler } from "react";
 import usePreviewModal from "@/hooks/use-preview-modal";
 import useCart from "@/hooks/use-cart";
+import { cn } from "@/lib/utils";
 
 interface ProductCard {
   data: Product;
+  className?: string;
 }
-const ProductCard: React.FC<ProductCard> = ({ data }) => {
+const ProductCard: React.FC<ProductCard> = ({ data, className }) => {
   const cart = useCart();
   const previewModal = usePreviewModal();
   const router = useRouter();
@@ -36,7 +38,16 @@ const ProductCard: React.FC<ProductCard> = ({ data }) => {
   return (
     <div
       onClick={handleClick}
-      className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4"
+      className={cn(
+        "bg-white",
+        "group",
+        "cursor-pointer",
+        "rounded-xl",
+        "border",
+        "p-3",
+        "space-y-4",
+        className
+      )}
     >
       {/*Images and Actions */}
       <div className="aspect-square rounded-xl bg-gray-100 relative">
