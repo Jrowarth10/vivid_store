@@ -2,18 +2,24 @@ import React from "react";
 import CommissionForm from "@/components/commissionForm";
 import Container from "@/components/ui/container";
 import Image from "next/image";
-import Giraffe from "@/assets/images/giraffe.jpg";
+
+import ArtWall from "@/components/artWall";
 
 const CommissionWorkPage: React.FC = () => {
   return (
     <Container>
+      <div className="py-12 w-3/4 mx-auto text-center ">
+        <h2 className="text-5xl py-12 ">Commissioned Artwork Inquiry</h2>
+        <p className="text-xl">
+          Thank you for considering a custom artwork! Please fill out the form
+          below with your contact details. We'll get in touch within 2 days to
+          discuss your preferences and the ideas you have in mind. We're excited
+          to bring your vision to life!
+        </p>
+      </div>
+      <ArtWall />
       <div className="flex gap-6 justify-center items-center">
         <CommissionForm />
-        <Image
-          src={Giraffe}
-          alt="portrait painting of a giraffe"
-          className="w-1/4"
-        />
       </div>
     </Container>
   );
