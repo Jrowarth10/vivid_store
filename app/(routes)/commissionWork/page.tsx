@@ -8,7 +8,7 @@ import ArtWall from "@/components/artWall";
 const CommissionWorkPage: React.FC = () => {
   return (
     <Container>
-      <div className="py-12 w-3/4 mx-auto text-center ">
+      <div className="pb-12 pt-8 w-3/4 mx-auto text-center ">
         <h2 className="text-5xl py-12 ">Commissioned Artwork Inquiry</h2>
         <p className="text-xl">
           Thank you for considering a custom artwork! Please fill out the form

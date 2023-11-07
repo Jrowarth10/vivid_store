@@ -6,6 +6,7 @@ import ProductList from "@/components/product-list";
 import Intro from "../../components/intro";
 import Link from "next/link";
 import Commission from "../../components/commission";
+import About from "@/components/about";
 
 //so its not cached accidentally
 export const revalidate = 0;
@@ -40,6 +41,7 @@ const HomePage = async () => {
         </div>
       </div>
       <Commission />
+      <About />
     </Container>
   );
 };
