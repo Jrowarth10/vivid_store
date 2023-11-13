@@ -7,13 +7,14 @@ import Intro from "../../components/intro";
 import Link from "next/link";
 import Commission from "../../components/commission";
 import About from "@/components/about";
+import Review from "@/components/reviews";
 
 //so its not cached accidentally
 export const revalidate = 0;
 
 const HomePage = async () => {
   const products = await getProducts({ isFeatured: true });
-  const billboard = await getBillboard("93d018ad-d9e3-4957-91ed-8df2b4255180");
+  const billboard = await getBillboard("4ec2b842-ee83-4e3c-a3a6-51b5923b4536");
   const limitedProducts = products.slice(0, 4);
   return (
     <Container>
@@ -33,7 +34,7 @@ const HomePage = async () => {
           <div className="flex justify-center pb-12">
             <Link
               href="http://localhost:3001/category/2f65c97b-4006-4b21-ac68-1804dab4f3f6"
-              className="text-2xl font-medium  px-4 py-2 rounded-full border border-black  bg-247BA0 bg-white "
+              className="text-2xl font-medium  px-4 py-2 rounded-md border border-black  bg-247BA0 bg-white disabled:cursor-not-allowed hover:bg-FFF2E9 transition  ease-in-out  "
             >
               View more
             </Link>
@@ -42,6 +43,7 @@ const HomePage = async () => {
       </div>
       <Commission />
       <About />
+      <Review />
     </Container>
   );
 };

@@ -19,7 +19,7 @@ const Commission = () => {
           <div className="flex justify-start pt-8">
             <Link
               href="/commissionWork"
-              className="text-2xl font-medium  px-4 py-2 rounded-full border border-black  bg-247BA0 bg-white "
+              className="text-2xl font-medium  px-4 py-2 rounded-md border border-black  bg-247BA0 bg-white  disabled:cursor-not-allowed hover:bg-black transition  ease-in-out  hover:text-white"
             >
               Get started
             </Link>
