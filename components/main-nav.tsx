@@ -21,7 +21,7 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
     <nav className=" ml-12 flex items-center space-x-4 lg:space-x-6 ">
       <Link
         href="/"
-        className="text-sm font-medium transition-colors hover:text-black text-neutral-500"
+        className="text-md  transition-colors hover:text-black text-neutral-500"
       >
         Home
       </Link>
@@ -30,7 +30,7 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
           key={route.href}
           href={route.href}
           className={cn(
-            "text-sm font-medium transition-colors hover:text-black",
+            "text-md font-medium transition-colors hover:text-black",
             route.active ? "text-black" : "text-neutral-500"
           )}
         >
@@ -40,13 +40,13 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
 
       <Link
         href="/commissionWork"
-        className="text-sm font-medium transition-colors hover:text-black text-neutral-500"
+        className="text-md font-medium transition-colors hover:text-black text-neutral-500"
       >
         Commissions
       </Link>
       <Link
         href="/contact"
-        className="text-sm font-medium transition-colors hover:text-black text-neutral-500"
+        className="text-md font-medium transition-colors hover:text-black text-neutral-500"
       >
         Contact
       </Link>

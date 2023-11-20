@@ -1,25 +1,25 @@
 import React from "react";
 import Image from "next/image";
-import wallArt from "@/assets/images/livingroom-1.jpg";
+import girl from "@/assets/images/girl.png";
 
 const Intro: React.FC = () => {
   return (
-    <div className="flex items-center justify-center py-12">
+    <div className="flex items-center justify-center my-20 border-b-2 border-gray-300">
       <div className="flex items-center justify-center gap-32 w-5/6">
         <Image
-          src={wallArt}
+          src={girl}
           alt="art on the wall in the living room"
-          className="w-2/5"
+          className="w-2/5 rounded-md"
         />
         <div>
-          <h1 className="text-4xl pb-4">Elevate Your Space</h1>
+          <h2 className="text-5xl pb-8">What We Do</h2>
           <p className="text-xl">
-            At Vivid Art Studio, we're dedicated to enriching your living spaces
-            with a burst of creativity and character. Our collection, featuring
-            stunning stationary, captivating prints, and personalized
-            commissions, is meticulously designed to infuse your home with
-            vibrancy. Transform your surroundings into a haven of inspiration
-            and warmth with our curated art pieces.
+            Vivid Art Studio is an online art shop, designed to share the
+            wonderful watercolour work of the artist Maria Shmarina. All
+            paintings on this site are original and have been painted by Maria.
+            Maria also offers commission work services, infusing each piece of
+            art with a distinctive personal touch, making the artwork a truly
+            unique and meaningful experience for individuals.
           </p>
         </div>
       </div>

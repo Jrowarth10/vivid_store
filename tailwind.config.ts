@@ -15,7 +15,7 @@ const config: Config = {
       },
       backgroundColor: {
         FFF2E9: "#FFF2E9",
-        F0E2EF: "#F0E2EF",
+        F3F2F2: "#F3F2F2",
       },
     },
   },

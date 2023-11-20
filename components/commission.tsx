@@ -4,10 +4,10 @@ import custom from "@/assets/images/custom.png";
 
 const Commission = () => {
   return (
-    <div className="flex items-center justify-center py-12">
+    <div className="flex items-center justify-center  my-16 py-20 border-b-2 border-gray-300">
       <div className="flex items-center justify-center gap-32 w-5/6">
         <div>
-          <h2 className=" text-5xl py-12 ">Commissioned Artwork</h2>
+          <h2 className=" text-5xl py-8 ">Commissioned Artwork</h2>
           <p className="text-xl">
             Experience art tailored to your imagination with our Commissioned
             Artwork service. We transform your vision into a captivating
@@ -28,7 +28,7 @@ const Commission = () => {
         <Image
           src={custom}
           alt="commissioned painting of family and dogs"
-          className="w-2/5"
+          className="w-2/5 rounded-md"
         />
       </div>
     </div>
