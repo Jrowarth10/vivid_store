@@ -1,12 +1,12 @@
 "use client";
 import qs from "query-string";
-import { Color, Size } from "@/types";
+import { Size } from "@/types"; //Color
 import { useRouter, useSearchParams } from "next/navigation";
 import Button from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 interface FilterProps {
-  data: (Size | Color)[];
+  data: Size[]; //Color
   name: string;
   valueKey: string;
 }

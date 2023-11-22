@@ -37,3 +37,8 @@
 .swiper-button-prev {
   left: 2vh;
 }
+
+/* Div width */
+.modified-8xl {
+  width: 82rem;
+}

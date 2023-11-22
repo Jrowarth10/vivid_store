@@ -24,16 +24,16 @@ const Info: React.FC<InfoProps> = ({ data }) => {
           <h3 className="font-semibold text-black">Size:</h3>
           <div> {data?.size?.name}</div>
         </div>
-        <div className=" flex items-center gap-x-4">
+        {/* <div className=" flex items-center gap-x-4">
           <h3 className="font-semibold text-black">Colour:</h3>
           <div
             className="h-6 w-6 rounded-full border border-gray-600"
             style={{ backgroundColor: data?.color?.value }}
           />
-        </div>
+        </div> */}
       </div>
       <div className="mt-10 flex items-center gap-x-3">
-        <Button className="flex items-center gap-x-2 bg-fff2e9 rounded-md">
+        <Button className="flex items-center gap-x-2 bg-fff2e9 rounded-md border border-black  bg-247BA0  disabled:cursor-not-allowed hover:bg-black transition  ease-in-out  hover:text-white">
           Add To Cart
           <ShoppingCart />
         </Button>

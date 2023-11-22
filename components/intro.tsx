@@ -4,7 +4,7 @@ import girl from "@/assets/images/girl.png";
 
 const Intro: React.FC = () => {
   return (
-    <div className="flex items-center justify-center my-20 border-b-2 border-gray-300">
+    <div className="flex items-center justify-center mt-20 border-b-2 border-gray-300 pb-20">
       <div className="flex items-center justify-center gap-32 w-5/6">
         <Image
           src={girl}
@@ -12,14 +12,15 @@ const Intro: React.FC = () => {
           className="w-2/5 rounded-md"
         />
         <div>
-          <h2 className="text-5xl pb-8">What We Do</h2>
+          <h2 className="text-5xl pb-8">Our Story</h2>
           <p className="text-xl">
-            Vivid Art Studio is an online art shop, designed to share the
-            wonderful watercolour work of the artist Maria Shmarina. All
-            paintings on this site are original and have been painted by Maria.
-            Maria also offers commission work services, infusing each piece of
-            art with a distinctive personal touch, making the artwork a truly
-            unique and meaningful experience for individuals.
+            Vivid Art Studio, an online art shop, showcasing the exquisite
+            watercolor creations of the Swedish Russian artist and founder Maria
+            Shmarina. All paintings featured are original pieces personally
+            crafted by Maria. Alongside her showcased work, Maria provides
+            commission services, imbuing each artwork with a distinctive
+            personal touch. Her art is a culmination of her travels across the
+            world.
           </p>
         </div>
       </div>

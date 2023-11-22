@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/images/vivid-logo.png";
 import getCategories from "@/actions/get-categories";
+import MobileNavbar from "./mobileNav";
 
 // export const revalidate = 0;
 
@@ -13,13 +14,14 @@ const Navbar = async () => {
   return (
     <div>
       <Container>
-        <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center mt-3 pb-4 border-b border-gray-300">
+        <div className="relative hidden sm:flex sm:px-6 lg:px-8  h-16 items-center mt-3 pb-4 border-b border-gray-300">
           <Link href="/">
             <Image src={logo} alt="vivid art logo" className="w-32 " />
           </Link>
           <MainNav data={categories} />
           <NavbarActions />
         </div>
+        <MobileNavbar data={categories} />
       </Container>
     </div>
   );

@@ -2,12 +2,12 @@ import Button from "@/components/ui/button";
 const CommissionForm: React.FC = () => {
   return (
     <form
-      className=" bg-FFF2E9 w-2/3 p-16 pb-28 my-16"
+      className=" w-2/3  pb-28 my-16"
       action={"https://formsubmit.co/4a425f46eccb1a1d7513dbc7ab1d231f"}
       method="POST"
     >
       <div className="text-center ">
-        <h2 className="text-4xl  pb-4 ">Contact us</h2>
+        <h2 className="text-5xl  pb-4 ">Contact us</h2>
         <h3 className="text-2xl  pb-12 ">
           We'd love to hear from you, use the form below to send us a message.
         </h3>
@@ -24,7 +24,7 @@ const CommissionForm: React.FC = () => {
             placeholder="Tom Smith"
             name="name"
             required
-            className="text-xl rounded-md p-2"
+            className="text-xl rounded-md p-2 border border-black"
           />
         </div>
 
@@ -38,7 +38,7 @@ const CommissionForm: React.FC = () => {
             placeholder="tomsmith@gmail.com"
             name="email"
             required
-            className="text-xl rounded-md p-2"
+            className="text-xl rounded-md p-2 border border-black"
           />
         </div>
 
@@ -51,13 +51,13 @@ const CommissionForm: React.FC = () => {
             placeholder="Type your message here"
             name="message"
             required
-            className="text-xl rounded-md p-2"
+            className="text-xl rounded-md p-2 border border-black"
           />
         </div>
 
         <div className=" ">
           <Button
-            className="flex items-center justify-center  rounded-md border bg-white border-black text-xl w-3/4"
+            className="flex items-center justify-center text-xl w-3/4  rounded-md border bg-black border-black text-white  hover:bg-white transition  ease-in-out  hover:text-black"
             type="submit"
           >
             Send
