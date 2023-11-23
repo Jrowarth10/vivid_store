@@ -6,9 +6,18 @@ import { usePathname } from "next/navigation";
 
 interface MainNavProps {
   data: Category[];
+  isMobileView?: boolean;
+  toggleMobileNavbar?: () => void;
 }
 
-const MainNav: React.FC<MainNavProps> = ({ data }) => {
+const MainNav: React.FC<MainNavProps> = ({
+  data,
+  isMobileView,
+  toggleMobileNavbar,
+}) => {
+  const MobileNavClassName = isMobileView
+    ? "flex flex-col col-1 gap-4  "
+    : "ml-12 flex items-center space-x-4 lg:space-x-6 ";
   const pathname = usePathname();
 
   const routes = data.map((route) => ({
@@ -18,10 +27,11 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
   }));
 
   return (
-    <nav className=" ml-12 flex items-center space-x-4 lg:space-x-6 ">
+    <nav className={MobileNavClassName}>
       <Link
         href="/"
-        className="text-md  transition-colors hover:text-black text-neutral-500"
+        className="text-lg  transition-colors hover:text-black text-neutral-500"
+        onClick={toggleMobileNavbar}
       >
         Home
       </Link>
@@ -30,9 +40,10 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
           key={route.href}
           href={route.href}
           className={cn(
-            "text-md font-medium transition-colors hover:text-black",
+            "text-lg  transition-colors hover:text-black",
             route.active ? "text-black" : "text-neutral-500"
           )}
+          onClick={toggleMobileNavbar}
         >
           {route.label}
         </Link>
@@ -40,13 +51,15 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
 
       <Link
         href="/commissionWork"
-        className="text-md font-medium transition-colors hover:text-black text-neutral-500"
+        className="text-lg transition-colors hover:text-black text-neutral-500"
+        onClick={toggleMobileNavbar}
       >
         Commissions
       </Link>
       <Link
         href="/contact"
-        className="text-md font-medium transition-colors hover:text-black text-neutral-500"
+        className="text-lg  transition-colors hover:text-black text-neutral-500"
+        onClick={toggleMobileNavbar}
       >
         Contact
       </Link>
