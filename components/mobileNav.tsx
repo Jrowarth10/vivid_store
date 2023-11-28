@@ -47,10 +47,10 @@ const MobileNavbar = ({ data }: MobileNavProps) => {
       >
         <button
           type="button"
-          className="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700"
+          className="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700 rounded-full flex items-center justify-center bg-white border shadow-md p-2 hover:scale-110 transition"
           onClick={toggleMobileNavbar}
         >
-          <X size={24} />
+          <X size={24} width={15} height={15} />
         </button>
         <div className="flex-col col-1 mx-auto items-center mt-3 pb-4">
           <MainNav

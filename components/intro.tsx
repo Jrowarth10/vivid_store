@@ -4,16 +4,16 @@ import girl from "@/assets/images/girl.png";
 
 const Intro: React.FC = () => {
   return (
-    <div className="flex items-center justify-center mt-20 border-b-2 border-gray-300 pb-20">
-      <div className="flex items-center justify-center gap-32 w-5/6">
+    <div className="flex items-center justify-center mt-16 pt-8 border-b-2 border-gray-300 pb-20">
+      <div className="flex flex-col-reverse items-center justify-center gap-12 w-5/6 lg:flex-row lg:gap-32">
         <Image
           src={girl}
           alt="art on the wall in the living room"
-          className="w-2/5 rounded-md"
+          className="rounded-md sm:w-4/5 md:3/5 lg:w-2/5"
         />
         <div>
-          <h2 className="text-5xl pb-8">Our Story</h2>
-          <p className="text-xl">
+          <h2 className="text-5xl text-center pb-8 md:text-left ">Our Story</h2>
+          <p className="text-lg text-center md:text-xl  md:text-left">
             Vivid Art Studio, an online art shop, showcasing the exquisite
             watercolor creations of the Swedish Russian artist and founder Maria
             Shmarina. All paintings featured are original pieces personally

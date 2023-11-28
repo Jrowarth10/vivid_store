@@ -11,49 +11,13 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import { Star } from "lucide-react";
 import slides, { Slide } from "../assets/slidesData";
 
-// function Review() {
-//   return (
-//     <div className=" w-5/6 mx-auto  my-16 py-20 text-center ">
-//       <h2 className="text-5xl  pb-4 ">Customer Reviews</h2>
-//       <h3 className="text-2xl pb-12  ">See what our customers think</h3>
-//       <Swiper
-//         cssMode={true}
-//         navigation={true}
-//         pagination={false}
-//         loop={true}
-//         mousewheel={true}
-//         // keyboard={true}
-//         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-//         className="mySwiper"
-//       >
-//         {slides.map((slide: Slide, index: number) => (
-//           <SwiperSlide key={index}>
-//             <div className="flex gap-16   w-3/4">
-//               <Image src={slide.src} alt={slide.alt} className="rounded-md" />
-//               <div className="flex flex-col justify-center">
-//                 <h4 className="text-2xl pb-2 ">{slide.title}</h4>
-//                 <div className="flex pb-4">
-//                   <Star color="gold" fill="gold" size={24} />
-//                   <Star color="gold" fill="gold" size={24} />
-//                   <Star color="gold" fill="gold" size={24} />
-//                   <Star color="gold" fill="gold" size={24} />
-//                   <Star color="gold" fill="gold" size={24} />
-//                 </div>
-//                 <p className="">{slide.text}</p>
-//               </div>
-//             </div>
-//           </SwiperSlide>
-//         ))}
-//       </Swiper>
-//     </div>
-//   );
-// }
-
 function Review() {
   return (
-    <div className=" w-5/6 mx-auto  my-16 py-20 text-center  ">
-      <h2 className="text-5xl  pb-4 ">Customer Reviews</h2>
-      <h3 className="text-2xl pb-12  ">See what our customers think</h3>
+    <div className="  mx-auto  my-16 pt-8 pb-20 text-center md:w-5/6  ">
+      <h2 className="text-5xl  pb-4 "> Reviews</h2>
+      <h3 className="pb-12 text-xl md:text-2xl ">
+        See what our customers think
+      </h3>
       <Swiper
         navigation={true}
         modules={[Navigation]}
@@ -62,8 +26,13 @@ function Review() {
       >
         {slides.map((slide: Slide, index: number) => (
           <SwiperSlide key={index}>
-            <div className="flex gap-16   w-3/4">
-              <Image src={slide.src} alt={slide.alt} className="rounded-md" />
+            <div className="flex gap-16 w-3/4">
+              <Image
+                src={slide.src}
+                alt={slide.alt}
+                className="rounded-md w-3/4 hidden md:block"
+              />
+
               <div className="flex flex-col justify-center">
                 <h4 className="text-2xl pb-2 ">{slide.title}</h4>
                 <div className="flex pb-4">
@@ -73,7 +42,7 @@ function Review() {
                   <Star color="gold" fill="gold" size={24} />
                   <Star color="gold" fill="gold" size={24} />
                 </div>
-                <p className="">{slide.text}</p>
+                <p>{slide.text}</p>
               </div>
             </div>
           </SwiperSlide>

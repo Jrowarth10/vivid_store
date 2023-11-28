@@ -2,15 +2,15 @@ import Button from "@/components/ui/button";
 const CommissionForm: React.FC = () => {
   return (
     <form
-      className="   w-2/3 p-16 pb-28 mb-12"
+      className="    p-16 pb-28 mb-12"
       action={"https://formsubmit.co/4a425f46eccb1a1d7513dbc7ab1d231f"}
       method="POST"
     >
-      <div className="flex justify-center">
+      <div className="flex justify-center text-center">
         <h2 className="text-5xl  pb-12 ">Inquiry form</h2>
       </div>
 
-      <div className="grid grid-cols-2 gap-12  ">
+      <div className="grid grid-cols-1 gap-12 md:grid-cols-2  ">
         <div className="flex flex-col">
           <label className="mb-2 text-xl" htmlFor="name">
             Full name:

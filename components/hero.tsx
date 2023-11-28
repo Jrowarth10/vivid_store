@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
     active: pathname === `/category/${route.id}`,
   }));
   return (
-    <div className=" mx-auto py-12 mb-12 w-5/6  ">
+    <div className=" mx-auto py-12 w-5/6  ">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-center  ">
         <Image
           src={Stockholm}

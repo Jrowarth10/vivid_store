@@ -9,23 +9,23 @@ import Himalayas from "@/assets/images/himalayas.png";
 
 const ArtWall: React.FC = () => {
   return (
-    <div className="flex flex-wrap gap-1 justify-center py-12">
-      <div className="w-1/4">
+    <div className="grid grid-cols-2 gap-1 justify-center py-12 w-3/4 mx-auto md:grid-cols-3  ">
+      <div className="flex justify-center items-center">
         <Image src={Row} alt="young boy rowing" />
       </div>
-      <div className="w-1/4">
+      <div className="flex justify-center items-center">
         <Image src={Family} alt="family at the beach" />
       </div>
-      <div className="w-1/4">
+      <div className="flex justify-center items-center">
         <Image src={Puppy} alt="girl and puppy at the park" />
       </div>
-      <div className="w-1/4">
+      <div className="flex justify-center items-center">
         <Image src={Surf} alt="woman in the water with a surfboard" />
       </div>
-      <div className="w-1/4">
+      <div className="flex justify-center items-center">
         <Image src={Venice} alt="painting of Venice" />
       </div>
-      <div className="w-1/4">
+      <div className="flex justify-center items-center">
         <Image src={Himalayas} alt="painting of the Himalayas" />
       </div>
     </div>

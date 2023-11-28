@@ -12,8 +12,8 @@ const HomePage = async () => {
   return (
     <div className="flex items-center justify-center my-16 pt-8 pb-20 border-b-2 border-gray-300 ">
       <div className="w-full rounded-md">
-        <h2 className=" flex justify-center text-5xl pb-4 ">New Arrivals</h2>
-        <h3 className=" flex justify-center text-2xl pb-8 ">
+        <h2 className=" flex justify-center text-5xl  pb-4   ">New Arrivals</h2>
+        <h3 className=" flex justify-center  pb-8 text-xl md:text-2xl ">
           See what has just been added
         </h3>
         <ProductList

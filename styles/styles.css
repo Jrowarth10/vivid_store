@@ -16,7 +16,6 @@
 }
 
 .swiper-slide img {
-  display: block;
   width: 40%;
   height: 100%;
   object-fit: cover;
@@ -30,15 +29,27 @@
 
 /* Move the next button to the right */
 .swiper-button-next {
-  right: 2vh;
+  right: 1vh;
 }
 
 /* Move the prev button to the left */
 .swiper-button-prev {
-  left: 2vh;
+  left: 1vh;
 }
 
 /* Div width */
 .modified-8xl {
   width: 82rem;
+}
+
+@media (min-width: 640px) {
+  /* Move the next button to the right */
+  .swiper-button-next {
+    right: 1px;
+  }
+
+  /* Move the prev button to the left */
+  .swiper-button-prev {
+    left: 10vh;
+  }
 }
