@@ -12,17 +12,15 @@ import MobileNavbar from "./mobileNav";
 const Navbar = async () => {
   const categories = await getCategories();
   return (
-    <div>
-      <Container>
-        <div className="relative hidden sm:flex sm:px-6 lg:px-8  h-16 items-center mt-3 pb-4 border-b border-gray-300">
-          <Link href="/">
-            <Image src={logo} alt="vivid art logo" className="w-32 " />
-          </Link>
-          <MainNav data={categories} />
-          <NavbarActions />
-        </div>
-        <MobileNavbar data={categories} />
-      </Container>
+    <div className="sticky top-0 z-30 bg-white ">
+      <div className="relative hidden py-10 sm:flex sm:px-6 lg:px-32  h-16 items-center mt-3  shadow-md mb-1  ">
+        <Link href="/">
+          <Image src={logo} alt="vivid art logo" className="w-32 " />
+        </Link>
+        <MainNav data={categories} />
+        <NavbarActions />
+      </div>
+      <MobileNavbar data={categories} />
     </div>
   );
 };

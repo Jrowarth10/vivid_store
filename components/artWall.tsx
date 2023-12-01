@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Row from "@/assets/images/boy rowing.jpg";
-import Family from "@/assets/images/family at beach.jpg";
-import Puppy from "@/assets/images/puppy.jpg";
+import Family from "@/assets/images/family at beach.png";
+import Puppy from "@/assets/images/puppy.png";
 import Surf from "@/assets/images/surf.jpg";
 import Venice from "@/assets/images/venice.png";
 import Himalayas from "@/assets/images/himalayas.png";

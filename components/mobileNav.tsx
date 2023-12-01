@@ -25,7 +25,7 @@ const MobileNavbar = ({ data }: MobileNavProps) => {
   // };
 
   return (
-    <div className="sm:hidden relative">
+    <div className="sm:hidden relative shadow-lg mb-1">
       <div className="flex justify-between py-4 mx-3 ">
         <Link href="/">
           <Image src={logo} alt="vivid art logo" className="w-32 " />

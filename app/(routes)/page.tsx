@@ -1,7 +1,7 @@
 import Container from "@/components/ui/container";
 // import Billboard from "@/components/billboard";
 // import getBillboard from "@/actions/get-billboard";
-import getProducts from "@/actions/get-products";
+// import getProducts from "@/actions/get-products";
 // import ProductList from "@/components/product-list";
 import Intro from "../../components/intro";
 // import Link from "next/link";
@@ -17,7 +17,7 @@ export const revalidate = 0;
 const HomePage = async () => {
   // const products = await getProducts({ isFeatured: true });
   const categories = await getCategories();
-  // const billboard = await getBillboard("4ec2b842-ee83-4e3c-a3a6-51b5923b4536");
+  // const billboard = await getBillboard("0391c9c5-0333-489b-acea-5ca5e844ded4");
   // const limitedProducts = products.slice(0, 4);
   return (
     <>
