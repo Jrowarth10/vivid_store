@@ -4,13 +4,13 @@ const CommissionForm: React.FC = () => {
   return (
     <form
       className="w-2/3 pb-28 my-16 mx-auto"
-      action={"https://formsubmit.co/4a425f46eccb1a1d7513dbc7ab1d231f"}
+      action="https://formsubmit.co/4a425f46eccb1a1d7513dbc7ab1d231f"
       method="POST"
     >
       <div className="text-center">
         <h2 className="text-5xl pb-4">Contact us</h2>
         <h3 className="text-2xl pb-12">
-          We'd love to hear from you, use the form below to send us a message.
+          We'd love to hear from you. Use the form below to send us a message.
         </h3>
       </div>
 

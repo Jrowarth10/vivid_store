@@ -22,6 +22,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         />
       </head>
       <body style={{ height: "100%", margin: 0, overflowX: "hidden" }}>
+        <style jsx global>{`
+          body {
+            font-family: "Crimson Pro", serif; /* Specify the desired font-family */
+          }
+        `}</style>
         <div style={{ minHeight: "100%" }}>
           <ModalProvider />
           <ToastProvider />
