@@ -20,10 +20,6 @@ const MobileNavbar = ({ data }: MobileNavProps) => {
     setIsMobileNavbarOpen(!isMobileNavbarOpen);
   };
 
-  // const closeMobileNavbar = () => {
-  //   setIsMobileNavbarOpen(false);
-  // };
-
   return (
     <div className="sm:hidden relative shadow-lg mb-1">
       <div className="flex justify-between py-4 mx-3 ">

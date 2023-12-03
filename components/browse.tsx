@@ -2,7 +2,6 @@ import getProducts from "@/actions/get-products";
 import ProductList from "@/components/product-list";
 import Link from "next/link";
 
-//so its not cached accidentally
 export const revalidate = 0;
 
 const HomePage = async () => {

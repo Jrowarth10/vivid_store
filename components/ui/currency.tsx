@@ -1,9 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 const formatter = new Intl.NumberFormat("en-GB", {
-  // Changed currency to GBP
   style: "currency",
-  currency: "GBP", // Changed currency code to GBP
+  currency: "GBP",
 });
 
 interface CurrencyProps {

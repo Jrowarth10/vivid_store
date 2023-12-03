@@ -1,4 +1,3 @@
-// slides.ts
 import Kotor from "@/assets/images/kotor.png";
 import Stuga from "@/assets/images/stuga.png";
 import Row from "@/assets/images/boy rowing.jpg";

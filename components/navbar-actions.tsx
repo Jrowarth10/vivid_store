@@ -14,7 +14,6 @@ const NavbarActions: React.FC<MainNavProps> = ({
   isMobileView,
   toggleMobileNavbar,
 }) => {
-  //Prevents hydration errors as it will use local storage
   const [isMounted, setIsMounted] = useState(false);
   const MobileNavClassName = isMobileView
     ? "mt-4 "
