@@ -16,17 +16,13 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang="en" style={{ height: "100%" }}>
       <head>
         {/* Include any necessary head elements */}
+        // eslint-disable-next-line @next/next/no-page-custom-font
         <link
           href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap"
           rel="stylesheet"
         />
       </head>
       <body style={{ height: "100%", margin: 0, overflowX: "hidden" }}>
-        <style jsx global>{`
-          body {
-            font-family: "Crimson Pro", serif; /* Specify the desired font-family */
-          }
-        `}</style>
         <div style={{ minHeight: "100%" }}>
           <ModalProvider />
           <ToastProvider />
