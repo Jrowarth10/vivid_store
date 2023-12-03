@@ -14,7 +14,14 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" style={{ height: "100%" }}>
-      <head>{/* Include any necessary head elements */}</head>
+      <head>
+        {/* Include any necessary head elements */}
+
+        <link
+          href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body style={{ height: "100%", margin: 0, overflowX: "hidden" }}>
         <div style={{ minHeight: "100%" }}>
           <ModalProvider />
