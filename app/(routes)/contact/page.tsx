@@ -1,7 +1,6 @@
 import React from "react";
 import ContactForm from "@/components/contactForm";
 import Container from "@/components/ui/container";
-import Image from "next/image";
 
 const ContactPage: React.FC = () => {
   return (
