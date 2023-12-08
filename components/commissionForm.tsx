@@ -10,7 +10,8 @@ const CommissionForm: React.FC = () => {
       <div className="text-center">
         <h2 className="text-5xl pb-4">Contact us</h2>
         <h3 className="text-2xl pb-12">
-          We'd love to hear from you, use the form below to send us a message.
+          We&apos;d love to hear from you, use the form below to send us a
+          message.
         </h3>
       </div>
 

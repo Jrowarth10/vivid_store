@@ -1,6 +1,6 @@
 import Button from "@/components/ui/button";
 
-const CommissionForm: React.FC = () => {
+const ContactForm: React.FC = () => {
   return (
     <form
       className="w-2/3 pb-28 my-16 mx-auto"
@@ -10,7 +10,8 @@ const CommissionForm: React.FC = () => {
       <div className="text-center">
         <h2 className="text-5xl pb-4">Contact us</h2>
         <h3 className="text-2xl pb-12">
-          We'd love to hear from you. Use the form below to send us a message.
+          We&apos;d love to hear from you. Use the form below to send us a
+          message.
         </h3>
       </div>
 
@@ -69,4 +70,4 @@ const CommissionForm: React.FC = () => {
   );
 };
 
-export default CommissionForm;
+export default ContactForm;

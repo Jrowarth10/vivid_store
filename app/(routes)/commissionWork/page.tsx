@@ -10,9 +10,9 @@ const CommissionWorkPage: React.FC = () => {
         <h2 className="text-5xl py-12  ">Commissioned Artwork Inquiry</h2>
         <p className="text-lg md:text-xl ">
           Thank you for considering a custom artwork! Please fill out the form
-          below with your contact details. We'll get in touch within 2 days to
-          discuss your preferences and the ideas you have in mind. We're excited
-          to bring your vision to life!
+          below with your contact details. We&apos;ll get in touch within 2 days
+          to discuss your preferences and the ideas you have in mind. We&apos;re
+          excited to bring your vision to life!
         </p>
       </div>
       <ArtWall />
