@@ -17,6 +17,9 @@ const config: Config = {
         FFF2E9: "#FFF2E9",
         F3F2F2: "#F3F2F2",
       },
+      fontFamily: {
+        sans: ["var(--font-crimson-pro)"],
+      },
     },
   },
   plugins: [],
