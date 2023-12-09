@@ -29,8 +29,8 @@ const Commission = () => {
         </div>
         <Image
           src={custom}
-          alt="commissioned painting of family and dogs"
-          className=" rounded-md sm:w-4/5 md:3/5 lg:w-2/5"
+          alt="commissioned painting of family at the beach"
+          className=" rounded-md  w-5/6 sm:w-3/6  lg:w-2/5"
         />
       </div>
     </div>

@@ -8,8 +8,8 @@ const Intro: React.FC = () => {
       <div className="flex flex-col-reverse items-center justify-center gap-12 w-5/6 lg:flex-row lg:gap-32">
         <Image
           src={girl}
-          alt="art on the wall in the living room"
-          className="rounded-md sm:w-4/5 md:3/5 lg:w-2/5"
+          alt="a girl painting a painting of Moscow"
+          className="rounded-md w-5/6 sm:w-3/6  lg:w-2/5"
         />
         <div>
           <h2 className="text-5xl text-center pb-8 md:text-left ">Our Story</h2>

@@ -10,7 +10,7 @@ const Navbar = async () => {
   const categories = await getCategories();
   return (
     <div className="sticky top-0 z-30 bg-white ">
-      <div className="relative hidden py-10 sm:flex sm:px-6 lg:px-32  h-16 items-center mt-3  shadow-md mb-1  ">
+      <div className="relative hidden py-10 sm:flex sm:px-6 lg:px-32  h-16 items-center  shadow-md   ">
         <Link href="/">
           <Image src={logo} alt="vivid art logo" className="w-32 " />
         </Link>

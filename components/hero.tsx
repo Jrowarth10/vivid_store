@@ -20,12 +20,12 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
     active: pathname === `/category/${route.id}`,
   }));
   return (
-    <div className=" mx-auto py-12 w-5/6  ">
+    <div className=" mx-auto py-16 w-5/6  ">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-center  ">
         <Image
           src={Stockholm}
           alt="swedish archipelago"
-          className="rounded-md max-w-xs sm:max-w-sm  md:max-w-md lg:mr-12 lg:max-w-md xl:max-w-lg"
+          className="rounded-md max-w-xs sm:max-w-sm  md:max-w-md  lg:max-w-md lg:mr-12  "
         />
         <div>
           <h1 className=" text-6xl text-center  mb-4 sm:text-6xl sm:text-left md:text-7xl   xl:text-8xl  ">

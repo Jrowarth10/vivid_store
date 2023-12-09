@@ -45,11 +45,11 @@
 @media (min-width: 640px) {
   /* Move the next button to the right */
   .swiper-button-next {
-    right: 1px;
+    right: 2vh;
   }
 
   /* Move the prev button to the left */
   .swiper-button-prev {
-    left: 10vh;
+    left: 2vh;
   }
 }
