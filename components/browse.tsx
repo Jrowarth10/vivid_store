@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const revalidate = 0;
 
-const HomePage = async () => {
+const Browse = async () => {
   const products = await getProducts({ isFeatured: true });
 
   const limitedProducts = products.slice(0, 4);
@@ -24,7 +24,7 @@ const HomePage = async () => {
 
         <div className="flex justify-center pt-12 ">
           <Link
-            href="http://localhost:3001/category/2f65c97b-4006-4b21-ac68-1804dab4f3f6"
+            href="https://vivid-store.vercel.app/category/5099b8f3-1dce-47e8-aa30-d9695dd78ebc"
             className="text-2xl font-medium  px-4 py-2 rounded-md border border-black  bg-247BA0 bg-black text-white disabled:cursor-not-allowed hover:bg-white transition  ease-in-out  hover:text-black  "
           >
             View more
@@ -35,4 +35,4 @@ const HomePage = async () => {
   );
 };
 
-export default HomePage;
+export default Browse;
