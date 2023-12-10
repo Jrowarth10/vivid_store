@@ -6,18 +6,14 @@ import Commission from "../../components/commission";
 
 import Review from "@/components/reviews";
 import Hero from "@/components/hero";
-import getCategories from "@/actions/get-categories";
+
 import Browse from "../../components/browse";
 
-export const revalidate = 0;
-
-const HomePage = async () => {
-  const categories = await getCategories();
-
+const HomePage: React.FC = () => {
   return (
     <>
       <div className="bg-gray-100 ">
-        <Hero data={categories} />
+        <Hero />
       </div>
       <Container>
         <Browse />

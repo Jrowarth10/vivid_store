@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const revalidate = 0;
 
-const Browse = async () => {
+const Browse: React.FC = async () => {
   const products = await getProducts({ isFeatured: true });
 
   const limitedProducts = products.slice(0, 4);
