@@ -1,15 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import Stockholm from "@/assets/images/livingroom-2.png";
+import Livingroom from "@/assets/images/livingroom-2.png";
 
 const Hero: React.FC = () => {
   return (
     <div className=" mx-auto py-16 w-5/6  ">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-center  ">
         <Image
-          src={Stockholm}
-          alt="swedish archipelago"
+          src={Livingroom}
+          alt="a painting in a livingroom"
           className="rounded-md max-w-xs sm:max-w-sm  md:max-w-md  lg:max-w-md lg:mr-12  "
         />
         <div>
