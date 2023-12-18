@@ -39,7 +39,7 @@ const HomePage: React.FC = async () => {
 
             <div className="flex justify-center pt-12 ">
               <Link
-                href="https://vivid-store.vercel.app/category/c5c2ae9e-963c-4de7-af3e-f240d69f7643"
+                href="https://vivid-store.vercel.app/category/79b806ea-83b9-4b37-8e1d-c20259d4e60e"
                 className="text-2xl font-medium  px-4 py-2 rounded-md border border-black  bg-247BA0 bg-black text-white disabled:cursor-not-allowed hover:bg-white transition  ease-in-out  hover:text-black  "
               >
                 View more
