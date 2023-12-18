@@ -24,7 +24,7 @@ const Browse: React.FC = async () => {
 
         <div className="flex justify-center pt-12 ">
           <Link
-            href="https://vivid-store.vercel.app/category/5099b8f3-1dce-47e8-aa30-d9695dd78ebc"
+            href="https://vivid-store.vercel.app/category/c5c2ae9e-963c-4de7-af3e-f240d69f7643"
             className="text-2xl font-medium  px-4 py-2 rounded-md border border-black  bg-247BA0 bg-black text-white disabled:cursor-not-allowed hover:bg-white transition  ease-in-out  hover:text-black  "
           >
             View more
